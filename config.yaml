@@ -1,0 +1,18 @@
+trade:
+  coin: "CELO-USDT" # 使用什么币种回测  BNBBUSD
+  date_start: "2021-10-17" # 回测开始时间
+  date_end: "2021-12-21" # 回测结束时间
+  c_rate: 2 / 10000 # 手续费  还可以更低
+
+  # ===== 网格回测参数
+  ini_cap: 10000 # 起始投入
+  max_rate: 0.95 # 最大允许投入，币安最大允许投入本金的95%
+  margin_rate: 0.05 # 维持保证金比率
+  leverage: 7 # 杠杆比例
+
+  # 单一网格回测参数
+  grid_low: 2.2 # 网格最低价
+  grid_high: 10 # 网格最高价
+  grid_count: 100 # 网格数目
+  stop_limit: 0.01 # 止盈止损价格限制
+
